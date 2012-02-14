@@ -19,5 +19,5 @@ Invoke the function like so:
 _$num_ is the number (pass an int, please) to be suffixed.
 
 
-_$sup_ is a boolean - *true* wraps the suffix in a &lt;sup&gt; tag (1<sup>st</sup>), *false* returns just the raw text.
+_$sup_ is a boolean - *true* wraps the suffix in a &lt;sup&gt; tag (1<sup>st</sup>), *false* returns just the raw text (1st).
 
