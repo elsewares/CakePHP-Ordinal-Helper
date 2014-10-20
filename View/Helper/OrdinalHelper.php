@@ -20,14 +20,19 @@ class OrdinalHelper extends AppHelper {
         if (!in_array(($num % 100),array(11,12,13))){
           switch ($num % 10) {
             // Handle 1st, 2nd, 3rd
-            case 1:  $suff = 'st';
-            case 2:  $suff = 'nd';
-            case 3:  $suff = 'rd';
-            default: $suff = 'th';
+            case 1:  
+                $suff = 'st'; 
+                break;
+            case 2:  
+                $suff = 'nd';
+                break;
+            case 3:  
+                $suff = 'rd';
+                break;
+            default: 
+                $suff = 'th';
           }
         }
         return ($sup)? $num . '<sup>' . $suff . '</sup>' : $num . $suff;
     }
 }
-
-?>
